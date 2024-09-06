@@ -19,9 +19,6 @@
     <sonar.organization>sonar-qube-examples</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
-  <properties>
-
-  </properties>
 
   <dependencies>
     <dependency>
