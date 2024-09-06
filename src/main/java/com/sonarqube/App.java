@@ -1,7 +1,7 @@
 package com.sonarqube;
 
 /**
- * Hello world!
+ * Hello world!!
  *
  */
 public class App 
