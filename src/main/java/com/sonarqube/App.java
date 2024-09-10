@@ -1,14 +1,20 @@
-package com.sonarqube;public class App 
-{
+package com.sonarqube;
+
+/**
+ * Hello world!!
+ *
+ */
+public class App 
+    {
     public static void main(String[] args) {
         CalculadoraDesconto calculadora = new CalculadoraDesconto();
-        
+
         double[] precos = {100.0, 200.0, 300.0};
         double desconto = 0.10; // 10% de desconto
-        
+
         double totalComDesconto = calculadora.calcularTotalComDesconto(precos, desconto);
         System.out.println("Total com desconto: " + totalComDesconto);
-        
+
         double totalSemDesconto = calculadora.calcularTotalSemDesconto(precos);
         System.out.println("Total sem desconto: " + totalSemDesconto);
     }
@@ -22,7 +28,7 @@ package com.sonarqube;public class App
         }
 
         double totalComDesconto = total - (total * desconto);
-        
+
         // Código duplicado
         double totalDuplicado = total - (total * desconto);
         return totalComDesconto;
