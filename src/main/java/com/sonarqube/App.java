@@ -1,26 +1,43 @@
-package com.sonarqube;
-
-/**
- * Hello world!!
- *
- */
-public class App 
+package com.sonarqube;public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main(String[] args) {
+        CalculadoraDesconto calculadora = new CalculadoraDesconto();
         
+        double[] precos = {100.0, 200.0, 300.0};
+        double desconto = 0.10; // 10% de desconto
+        
+        double totalComDesconto = calculadora.calcularTotalComDesconto(precos, desconto);
+        System.out.println("Total com desconto: " + totalComDesconto);
+        
+        double totalSemDesconto = calculadora.calcularTotalSemDesconto(precos);
+        System.out.println("Total sem desconto: " + totalSemDesconto);
+    }
 
-    
+    // Método para calcular o total com desconto
+    public double calcularTotalComDesconto(double[] precos, double desconto) {
+        double total = 0.0;
 
-            System.out.print("Digite a temperatura em graus Celsius: ");
-            double celsius = 100;
+        for (double preco : precos) {
+            total += preco;
+        }
 
-            double fahrenheit = (celsius * 9/5) + 32;
-    
-            // Exibe a temperatura em Fahrenheit
-            System.out.printf("A temperatura em Fahrenheit criando a mesma conta é: %.2f%n", (celsius * 9/5) + 32);
+        double totalComDesconto = total - (total * desconto);
+        
+        // Código duplicado
+        double totalDuplicado = total - (total * desconto);
+        return totalComDesconto;
+    }
 
-            System.out.println("A temperatura em Fahrenheit usando o calculo é: "+fahrenheit);
+    // Método para calcular o total sem desconto
+    public double calcularTotalSemDesconto(double[] precos) {
+        double total = 0.0;
+
+        for (double preco : precos) {
+            total += preco;
+        }
+
+        // Código duplicado
+        double totalDuplicado = total;
+        return total;
     }
 }
