@@ -11,11 +11,13 @@ public class App {
     public static void main(String[] args) {
         int result;
 
-        result = test(10, 0); // quebra!
+        result = test(10); // quebra!
         LOGGER.info("Resultado: " + result);
     }
 
-    public static int test(int dividendo, int divisor) {
+    public static int test(int dividendo) {
+        int divisor = 0;
+
         return dividendo / divisor;
     }
 }
