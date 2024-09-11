@@ -7,20 +7,7 @@ public class App {
     }
 
     public void TestCase2() {
-        char valExtenso;
-
-        switch(3){
-            case 1:
-                valExtenso = 'Um';
-                break
-            case 2:
-                valExtenso = 'Dois';
-                break;
-            case 3:
-                valExtenso = 'Três';
-                break;
-        }
-        
+        while(true) { }
     }
 
 }
