@@ -3,10 +3,10 @@ package com.sonarqube;
 public class App {
 
     public static void main( String[] args ) {
-        this.TesteCase2();
+        TesteCase2();
     }
 
-    public void TestCase2() {
+    public static void TestCase2() {
         while(true) { }
     }
 
