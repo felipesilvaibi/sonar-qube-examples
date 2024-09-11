@@ -3,12 +3,24 @@ package com.sonarqube;
 public class App {
 
     public static void main( String[] args ) {
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
+        this.TesteCase2();
+    }
 
-        for(int i = 1; i < 100; i++) {
-            i--;
+    public void TestCase2() {
+        char valExtenso;
+
+        switch(3){
+            case 1:
+                valExtenso = 'Um';
+                break
+            case 2:
+                valExtenso = 'Dois';
+                break;
+            case 3:
+                valExtenso = 'Três';
+                break;
         }
+        
     }
 
 }
