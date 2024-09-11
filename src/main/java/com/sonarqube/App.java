@@ -14,7 +14,7 @@ public class App
         estacionamento.assignSpot();
     }
 
-    class Estacionamento {
+    public class Estacionamento {
     public void Vaga() {
         Random random = new Random();  
         int vagaNumero = random.nextInt(100); 
