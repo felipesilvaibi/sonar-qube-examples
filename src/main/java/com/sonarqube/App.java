@@ -3,18 +3,13 @@ package com.sonarqube;
 public class App {
 
     public static void main( String[] args ) {
-        TestCase2();
-    }
+        int x;
 
-    public static void TestCase2() {
-        int idade = 18;
-        
-        if (idade < 16) {
-            // Dispensado da votação
-        } else if (idade < 18) {
-            // Voto facultativo
+        if (x == 0){
+
+        }else if(x == 1){
+            
         }
-
     }
 
 }
