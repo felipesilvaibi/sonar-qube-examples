@@ -15,7 +15,7 @@ public class App
     }
 
     public class Estacionamento {
-    public void Vaga() {
+    public static void Vaga() {
         Random random = new Random();  
         int vagaNumero = random.nextInt(100); 
         System.out.println("Vaga Numero: " + vagaNumero);
