@@ -1,13 +1,14 @@
 package com.sonarqube;
 
-/**
- * Hello world!!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+
+    public static void main( String[] args ) {
+        int x = 0;
+
+        while(true){
+            x++;
+        }
+
     }
+
 }
