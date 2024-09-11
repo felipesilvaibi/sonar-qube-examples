@@ -1,6 +1,6 @@
 package com.sonarqube;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -9,12 +9,23 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void TesteDeGolpe()
     {
-        assertTrue( true );
+        // Testando o golpe que tira 10 de vida
+        String resultado1 = App.golpear(10);
+        assertEquals("Tirou 10 de vida.", resultado1);
+
+        // Testando o golpe que foi desviado
+        String resultado2 = App.golpear(0);
+        assertEquals("Desviou", resultado2);
+
+        // Testando outro desvio
+        String resultado3 = App.golpear(0);
+        assertEquals("Desviou", resultado3);
+
+        // Testando o golpe que tira 50 de vida
+        String resultado4 = App.golpear(50);
+        assertEquals("Tirou 50 de vida", resultado4);
     }
 }
