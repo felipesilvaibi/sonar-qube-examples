@@ -1,13 +1,23 @@
 package com.sonarqube;
+import java.util.logging.Logger;
 
 /**
  * Hello world!!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+    private static final Logger LOGGER = Logger.getLogger(App.class.getName());
+
+    public static void main(String[] args) {
+        int result;
+
+        result = test(10); // quebra!
+        LOGGER.info("Resultado: " + result);
+    }
+
+    public static int test(int dividendo) {
+        int divisor = 0;
+
+        return dividendo / divisor;
     }
 }
