@@ -3,7 +3,7 @@ package com.sonarqube;
 public class App {
 
     public static void main( String[] args ) {
-        TesteCase2();
+        TestCase2();
     }
 
     public static void TestCase2() {
