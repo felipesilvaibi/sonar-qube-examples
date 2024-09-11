@@ -11,10 +11,8 @@ public class App {
     public static void main(String[] args) {
         int result;
 
-        result = test(10, 5);
+        result = test(10, 0); // quebra!
         LOGGER.info("Resultado: " + result);
-
-        // result = test(10, 0); quebra!
     }
 
     public static int test(int dividendo, int divisor) {
